@@ -199,7 +199,7 @@ var extraerString_AntesLlamado_0x4a99 = function(valor_entero_Antes_llamado_0x38
 
 You can check the obfuscated code in: <a href="https://github.com/Fare9/JS_POWMET/blob/master/JS_POWMET.DE.xml">JS_POWMET.DE.xml</a>
 
-The deobfuscated code in: <a href="https://github.com/Fare9/JS_POWMET/blob/master/JS_POWMET.DE%28desofuscado%29.xml">JS_POWMET.DE(deobfuscated).xml</a>
+The deobfuscated code in: <a href="https://github.com/Fare9/JS_POWMET/blob/master/JS_POWMET.DE(desofuscado).xml.js">JS_POWMET.DE(deobfuscated).xml</a>
 
 And the Strings: <a href="https://github.com/Fare9/JS_POWMET/blob/master/CadenasCodificadasDescodificadas">Strings</a>
 
