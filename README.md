@@ -206,8 +206,8 @@ And the Strings: <a href="https://github.com/Fare9/JS_POWMET/blob/master/Cadenas
 
 ## Analysts
 
-<a href="https://es.linkedin.com/in/aperezreyes">Alberto Pérez Reyes</a>
-<a href="https://www.linkedin.com/in/eduardo-blazquez-23093999/">Eduardo Blázquez (a.k.a Fare9)</a>
+- <a href="https://es.linkedin.com/in/aperezreyes">Alberto Pérez Reyes</a>
+- <a href="https://www.linkedin.com/in/eduardo-blazquez-23093999/">Eduardo Blázquez (a.k.a Fare9)</a>
 
 
 ## Remember visit and follow
