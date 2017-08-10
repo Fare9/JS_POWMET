@@ -213,6 +213,6 @@ And the Strings: <a href="https://github.com/Fare9/JS_POWMET/blob/master/Cadenas
 
 ## Remember visit and follow
 
-<a href="https://github.com/Fare9">https://github.com/Fare9</a>
-<a href="https://github.com/campeador">https://github.com/campeador</a>
-<a href="https://twitter.com/Erockandblues">Fare9 Twitter</a>
+- <a href="https://github.com/Fare9">https://github.com/Fare9</a>
+- <a href="https://github.com/campeador">https://github.com/campeador</a>
+- <a href="https://twitter.com/Erockandblues">Fare9 Twitter</a>
