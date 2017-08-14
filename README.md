@@ -203,7 +203,27 @@ The deobfuscated code in: <a href="https://github.com/Fare9/JS_POWMET/blob/maste
 
 And the Strings: <a href="https://github.com/Fare9/JS_POWMET/blob/master/CadenasCodificadasDescodificadas">Strings</a>
 
+## Binary Analysis
 
+After the javascript analysis, we toke our IDA Pro to analyze the binary known as BKDR_ANDROM which run the final payload.
+
+First of all, we started looking for strings inside IDA Pro strings view, .data, .rdata... And we saw some strings which were part of powershell code, so we took notepad++ and started analysis and cleaning code process. We have some generic variables like these:
+
+```powershell
+$reg_keyname = 'reg_key_placeholder';
+$dllname64 = 'dll64_regValueName_placeholder';
+$dllname32 = 'dll32_regValueName_placeholder';
+```
+
+So these variables should be set dynamically in program execution (and resolve our doubs about this powershell). One interesting line of code was:
+
+```powershell
+$pscript = $pscript + 'Invoke-ReflectivePEInjection -PEBytes $dllbytes;'
+```
+
+With this line, the script can inject executable code in memory instead of write to file and then execute the file. (You can find an analysis of a powershell like this in this URL: https://isc.sans.edu/forums/diary/Powershell+Malware+No+Hard+drive+Just+hard+times/20823/ ).
+
+Now should start the static code analysis searching interesting code...
 
 ## Analysts
 
