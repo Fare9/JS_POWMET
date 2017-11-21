@@ -228,11 +228,11 @@ Now should start the static code analysis searching interesting code...
 ## Analysts
 
 - <a href="https://es.linkedin.com/in/aperezreyes">Alberto Pérez Reyes</a>
-- <a href="https://www.linkedin.com/in/eduardo-blazquez-23093999/">Eduardo Blázquez (a.k.a Fare9)</a>
+- <a href="https://twitter.com/Farenain">Fare9</a>
 
 
 ## Remember visit and follow
 
 - <a href="https://github.com/Fare9">https://github.com/Fare9</a>
 - <a href="https://github.com/campeador">https://github.com/campeador</a>
-- <a href="https://twitter.com/Erockandblues">Fare9 Twitter</a>
+- <a href="https://twitter.com/Farenain">Fare9 Twitter</a>
